@@ -67,6 +67,7 @@ function App() {
       }
     >
       <main>
+        <h1>Weather Finder</h1>
         <div className="search-box">
           <input
             className="search-bar"
