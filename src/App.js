@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.css";
+import "./App.css";
 
 const api = {
   key: "9b1e3856ca29599d1c157b193e8c3f46",
@@ -47,6 +47,7 @@ function App() {
       "Saturday"
     ];
 
+    
     let day = days[d.getDay()];
     let date = d.getDate();
     let month = months[d.getMonth()];
@@ -83,6 +84,7 @@ function App() {
                 {weather.name}, {weather.sys.country}
               </div>
               <div className="date">{dateBuilder(new Date())}</div>
+
             </div>
 
             <div className="weather-box">
@@ -98,3 +100,4 @@ function App() {
   );
 }
 export default App;
+
